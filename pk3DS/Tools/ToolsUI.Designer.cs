@@ -136,7 +136,7 @@
             // CHK_Delete
             // 
             this.CHK_Delete.AutoSize = true;
-            this.CHK_Delete.Checked = true;
+            this.CHK_Delete.Checked = false;
             this.CHK_Delete.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_Delete.Location = new System.Drawing.Point(12, 148);
             this.CHK_Delete.Name = "CHK_Delete";
