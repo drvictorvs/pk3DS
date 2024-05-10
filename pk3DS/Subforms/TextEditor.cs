@@ -32,7 +32,7 @@ namespace pk3DS
             SaveFileDialog Dump = new SaveFileDialog {Filter = "Text File|*.txt"};
             DialogResult sdr = Dump.ShowDialog();
             if (sdr != DialogResult.OK) return;
-            bool newline = WinFormsUtil.Prompt(MessageBoxButtons.YesNo, "Remove newline formatting codes? (\\n,\\r,\\c)", "Removing newline formatting will make it more readable but will prevent any importing of that dump.") == DialogResult.Yes;
+            bool newline = false;
             string path = Dump.FileName;
             ExportTextFile(path, newline, files);
         }
